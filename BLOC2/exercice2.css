@@ -20,7 +20,6 @@ body {
   padding: 40px;
 }
 
-/* LA CARTE */
 .carte {
   background: white;
   border-radius: 14px;
@@ -33,13 +32,6 @@ body {
   cursor: pointer;
 }
 
-/* SURVOL DE LA CARTE */
-.carte:hover {
-  background-color: #e8f4fd;
-  transform: translateY(-5px);
-}
-
-/* AVATAR */
 .avatar {
   width: 80px;
   height: 80px;
@@ -54,14 +46,12 @@ body {
   margin: 0 auto 20px auto;
 }
 
-/* NOM */
 .carte h2 {
   color: #1a1a2e;
   font-size: 20px;
   margin-bottom: 10px;
 }
 
-/* DESCRIPTION */
 .carte p {
   color: #666;
   font-size: 14px;
@@ -69,7 +59,6 @@ body {
   margin-bottom: 20px;
 }
 
-/* BOUTON */
 button {
   padding: 10px 24px;
   background-color: #1a1a2e;
