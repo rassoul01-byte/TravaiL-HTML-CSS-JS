@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f4ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+/* LA CARTE */
+.carte {
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  padding: 30px;
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.3s;
+  cursor: pointer;
+}
+
+/* SURVOL DE LA CARTE */
+.carte:hover {
+  background-color: #e8f4fd;
+  transform: translateY(-5px);
+}
+
+/* AVATAR */
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #1a1a2e;
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 20px auto;
+}
+
+/* NOM */
+.carte h2 {
+  color: #1a1a2e;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* DESCRIPTION */
+.carte p {
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* BOUTON */
+button {
+  padding: 10px 24px;
+  background-color: #1a1a2e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #4a4a8a;
+}
