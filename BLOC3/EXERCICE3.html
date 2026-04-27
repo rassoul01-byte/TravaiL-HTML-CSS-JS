@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulaire dev Data P8</title>
+
+  <link rel="stylesheet" href="exercice3.css">
+  <script src="exercice3.js" ></script>
+  
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>📋 Formulaire Dev Data P8</h1>
+
+    <!-- Nom -->
+    <div class="champ">
+      <label for="nom">Nom :</label>
+      <input type="text" id="nom" placeholder="Entrez votre nom">
+      <p class="erreur" id="erreur-nom">⚠️ Le nom est obligatoire.</p>
+    </div>
+
+    <!-- Age -->
+    <div class="champ">
+      <label for="age">Âge :</label>
+      <input type="number" id="age" placeholder="Entrez votre âge" min="1">
+      <p class="erreur" id="erreur-age">⚠️ L'âge est obligatoire et doit être positif.</p>
+    </div>
+
+    <!-- Sexe -->
+    <div class="champ">
+      <label>Sexe :</label>
+      <div class="radio-group">
+        <label><input type="radio" name="sexe" value="Homme"> Homme</label>
+        <label><input type="radio" name="sexe" value="Femme"> Femme</label>
+      </div>
+      <p class="erreur" id="erreur-sexe">⚠️ Veuillez choisir un sexe.</p>
+    </div>
+
+    <!-- Loisir -->
+    <div class="champ">
+      <label>Loisir (un seul choix) :</label>
+      <div class="radio-group">
+        <label><input type="radio" name="loisir" value="Football"> Football</label>
+        <label><input type="radio" name="loisir" value="Musique"> Musique</label>
+        <label><input type="radio" name="loisir" value="Cinéma"> Cinéma</label>
+        <label><input type="radio" name="loisir" value="Lecture"> Lecture</label>
+      </div>
+      <p class="erreur" id="erreur-loisir">⚠️ Veuillez choisir un loisir.</p>
+    </div>
+
+    <!-- Pays -->
+    <div class="champ">
+      <label for="pays">Pays :</label>
+      <select id="pays">
+        <option value="">-- Choisissez un pays --</option>
+        <option value="Sénégal">Sénégal</option>
+        <option value="Mali">Mali</option>
+        <option value=">Mauritanie">Mauritanie</option>
+        <option value="Guinée">Guinée</option>
+        <option value="Maroc">Maroc</option>
+        <option value="Autre">Autre</option>
+      </select>
+      <p class="erreur" id="erreur-pays">⚠️ Veuillez choisir un pays.</p>
+    </div>
+
+    <!-- Commentaire -->
+    <div class="champ">
+      <label for="commentaire">Commentaire :</label>
+      <textarea id="commentaire" placeholder="Écrivez votre commentaire ici..."></textarea>
+      <p class="erreur" id="erreur-commentaire">⚠️ Le commentaire est obligatoire.</p>
+    </div>
+
+    <!-- Bouton -->
+    <button type="button" onclick="validerFormulaire()">Envoyer</button>
+
+    <!-- Résultat -->
+    <div id="resultat">
+      <h2>✅ Données saisies :</h2>
+      <p>👤 Nom : <span id="affiche-nom"></span></p>
+      <p>🎂 Âge : <span id="affiche-age"></span> ans</p>
+      <p>⚧ Sexe : <span id="affiche-sexe"></span></p>
+      <p>🎯 Loisir : <span id="affiche-loisir"></span></p>
+      <p>🌍 Pays : <span id="affiche-pays"></span></p>
+      <p>💬 Commentaire : <span id="affiche-commentaire"></span></p>
+    </div>
+  </div>
+
+</body>
+</html>

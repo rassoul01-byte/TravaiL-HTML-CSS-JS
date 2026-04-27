@@ -1,0 +1,143 @@
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f4ff;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
+    .container {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      padding: 40px;
+      width: 100%;
+      max-width: 550px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #1a1a2e;
+      margin-bottom: 30px;
+      font-size: 22px;
+    }
+
+    .champ {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 6px;
+      font-size: 14px;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px 14px;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      font-size: 14px;
+      transition: border-color 0.3s;
+      outline: none;
+    }
+
+    input[type="text"]:focus,
+    input[type="number"]:focus,
+    select:focus,
+    textarea:focus {
+      border-color: #4a4a8a;
+    }
+
+    .radio-group {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 4px;
+    }
+
+    .radio-group label {
+      font-weight: normal;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+    }
+
+    input[type="radio"] {
+      accent-color: #4a4a8a;
+      width: 16px;
+      height: 16px;
+      cursor: pointer;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    .erreur {
+      color: red;
+      font-size: 12px;
+      margin-top: 4px;
+      display: none;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #1a1a2e;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background-color: #4a4a8a;
+    }
+
+    #resultat {
+      display: none;
+      margin-top: 30px;
+      background: #f0f4ff;
+      border-left: 4px solid #4a4a8a;
+      border-radius: 8px;
+      padding: 20px;
+    }
+
+    #resultat h2 {
+      color: #1a1a2e;
+      margin-bottom: 12px;
+      font-size: 16px;
+    }
+
+    #resultat p {
+      font-size: 14px;
+      color: #333;
+      margin-bottom: 8px;
+      line-height: 1.6;
+    }
+
+    #resultat span {
+      font-weight: bold;
+      color: #4a4a8a;
+    }
+  

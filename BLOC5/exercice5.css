@@ -1,0 +1,26 @@
+
+   
+    /* Thème clair — par défaut */
+    body {
+      background-color: white;
+      color: black;
+      transition: 0.3s;
+    }
+
+    /* Thème sombre — quand on ajoute la classe */
+    body.sombre {
+      background-color: #1a1a2e;
+      color: white;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 8px;
+      border: none;
+      margin-top: 20px;
+    }
+  
+    
+  
